@@ -1,0 +1,668 @@
+/* Шрифты */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+body {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #1d1d1d;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+main {
+  padding-top: 70px;
+}
+.container {
+  max-width: 956px;
+  margin: auto;
+  padding: 0 10px;
+}
+.logo:hover {
+  text-decoration: none;
+}
+
+/* Шапка */
+
+.header {
+  position: fixed;
+  padding: 16px 0 16px 0;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0 0 16px #26262629;
+  z-index: 1000;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.but-in,
+.basket {
+  display: inline-block;
+}
+.but-in {
+  width: 78px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.but-in:focus {
+  font-size: 14px;
+  font-weight: 700;
+  background: #f0f0f0;
+  outline: none;
+  border: 2px solid #222222;
+}
+.basket img {
+  width: 19px;
+  height: 19px;
+}
+.logo .first-name {
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  color: #222222;
+}
+.logo .blink-name {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  animation: blink 3s linear infinite;
+  font-weight: 900;
+}
+@keyframes blink {
+  0% {
+    color: #57ad56;
+  }
+  50% {
+    color: #222222;
+  }
+  100% {
+    color: #57ad56;
+  }
+}
+
+/* Контент "Main (основной контент)" */
+
+/* Фиксированый фон */
+
+.restaurant {
+  position: fixed;
+  background: url("../images/Fixed_photo.png") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 364px;
+  z-index: -1;
+}
+
+/* Карточка с названием ресторана */
+
+.card-name {
+  background: #ffffff;
+  padding: 38px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 389px;
+  margin: 80px 0;
+  text-align: center;
+}
+.card-name .name {
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 54px;
+}
+.card-name .kitchen {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 315px;
+}
+.kitchen-name {
+  font-size: 14px;
+  line-height: 16px;
+}
+.kitchen .min {
+  font-size: 13px;
+  line-height: 15px;
+  background: #262626;
+  border-radius: 16px;
+  padding: 8px 16px;
+  color: #ffffff;
+}
+
+/* Блок с названием меню */
+
+.bacgr-menu {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #75757533;
+}
+.width-menu {
+  width: 65%;
+}
+.block-menu {
+  margin: 0;
+  padding: 40px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.name-menu-first {
+  color: #626262;
+  text-decoration: underline;
+  font-size: 16px;
+}
+.name-menu {
+  color: #626262;
+  font-size: 16px;
+}
+.name-menu-first,
+.name-menu {
+  line-height: 19px;
+  transition: 0.2s linear;
+}
+.name-menu-first:hover,
+.name-menu:hover {
+  color: #327430;
+  box-shadow: 3px 3px 3px #262626;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* Выпадающее меню при 576px */
+
+.dropdown-menu1 {
+  margin: 0;
+}
+.dropdown-menu1 > li {
+  text-align: center;
+  margin-bottom: 43px;
+  margin-top: 30px;
+  position: relative;
+}
+.dropdown-menu1 a {
+  font-size: 22px;
+  line-height: 44px;
+  text-decoration: none;
+  color: #1d1d1d;
+}
+.menu-sub {
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: 0.3s linear;
+  position: absolute;
+}
+.dropdown-menu1 li:hover .menu-sub {
+  transform: scaleY(1);
+  position: inherit;
+}
+
+/* Блок с карточками меню */
+
+.bacgr-menu-1 {
+  background: #ffffff;
+}
+h2 {
+  font-size: 22px;
+  padding: 56px 0 7px 0;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-1 {
+  width: 48%;
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #75757533;
+  position: relative;
+  cursor: pointer;
+  transition: 0.7s linear;
+  overflow: hidden;
+}
+.card-1:hover {
+  background-color: #c5c2c291;
+}
+.card-1 img {
+  transition: all 1s ease-out;
+}
+.card-1:hover img {
+  transform: scale(1.1);
+}
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+.two-name {
+  font-size: 13px;
+  line-height: 21px;
+  padding-left: 16px;
+}
+.price {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 800;
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  margin: 0;
+}
+
+/* Блок "footer" */
+
+footer {
+  background: #262626;
+  width: 100%;
+  padding: 40px 0 20px 0;
+}
+footer .first-name1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+}
+footer .blink-name2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  animation: blink-name2 3s ease-in-out infinite;
+  font-weight: 400;
+  font-size: 40px;
+}
+@keyframes blink-name2 {
+  0% {
+    color: #57ad56;
+  }
+  50% {
+    color: #262626;
+  }
+  100% {
+    color: #57ad56;
+  }
+}
+.band2 {
+  border: none;
+  background-color: #ffffff;
+  height: 1px;
+  margin: 40px 0 40px 0;
+}
+
+/* Стили для "footer-menu" */
+.block1,
+.block2,
+.block3 {
+  width: 308px;
+}
+.block1 {
+  margin-bottom: 40px;
+}
+.footer-menu,
+.footer-text {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.block2 a,
+.block3 a {
+  padding: 12px 0;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  display: block;
+}
+.block2 a {
+  width: 196px;
+}
+.block3 a {
+  width: 67px;
+}
+
+/* Блок кнопки выбора языка */
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 227px;
+  font-size: 13px;
+  color: #ffffff;
+  background: #3b3b3b;
+  border: none;
+  border-radius: 0;
+}
+.dropdown-menu {
+  margin-top: 4px;
+  width: 227px;
+  font-size: 13px;
+  color: #ffffff;
+  background: #dddddd;
+  border-radius: 0;
+  text-align: center;
+}
+
+/* Подблок "social" */
+
+.wlg {
+  justify-content: flex-start;
+}
+.world {
+  width: 16px;
+  margin-right: 16px;
+}
+.shape {
+  width: 14px;
+}
+.sharp,
+.uber {
+  font-size: 16px;
+  line-height: 19px;
+  display: inline-block;
+}
+.social {
+  margin-top: 33px;
+  width: 120px;
+}
+.sharp {
+  color: #49a144;
+}
+.uber {
+  color: #ffffff;
+}
+
+/* Кнопки App Store + Googl play */
+
+.app_googl {
+  display: flex;
+  justify-content: center;
+}
+.app {
+  width: 182px;
+  height: 61px;
+  background: url("../images/App_Store.png") no-repeat;
+  background-size: cover;
+  margin-right: 40px;
+}
+.google {
+  width: 203px;
+  height: 60px;
+  background: url("../images/Goole_play.png") no-repeat;
+  background-size: cover;
+}
+.app,
+.google {
+  opacity: 0.4;
+}
+.app:hover,
+.google:hover {
+  opacity: 1;
+}
+
+/* Блок footer-text */
+
+.text {
+  font-size: 11px;
+  line-height: 13px;
+  width: 308px;
+  color: #ffffff;
+}
+
+/* Кнопка "Вверх" */
+
+.btn-up {
+  opacity: 0.3;
+  cursor: pointer;
+}
+.btn-up .up {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 80px;
+  height: 80px;
+  background: url("../images/btn-up.png") no-repeat;
+  background-size: cover;
+}
+.btn-up:hover {
+  opacity: 1;
+}
+
+/* Медиа-запросы */
+
+/* на 280 */
+
+@media screen and (max-width: 280px) {
+  .restaurant {
+    height: 256px;
+  }
+  .card-name {
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 0px 16px #75757533;
+  }
+  .card-name .name {
+    font-size: 21px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .kitchen-name,
+  .min {
+    margin: auto;
+  }
+  .kitchen-name {
+    padding-bottom: 16px;
+  }
+}
+
+/* на 320 */
+
+@media screen and (min-width: 281px) and (max-width: 320px) {
+  .restaurant {
+    height: 256px;
+  }
+  .card-name {
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 0px 16px #75757533;
+  }
+  .card-name .name {
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .kitchen-name,
+  .min {
+    margin: auto;
+  }
+  .kitchen-name {
+    padding-bottom: 16px;
+  }
+}
+
+/* на 375 */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .restaurant {
+    height: 256px;
+  }
+  .card-name {
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 0px 16px #75757533;
+  }
+  .card-name .name {
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .kitchen-name,
+  .min {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .basket {
+    display: none;
+  }
+  .nav-menu {
+    width: 78px;
+  }
+  .btn,
+  .dropdown-menu {
+    width: 173px;
+  }
+  footer .first-name1,
+  footer .blink-name2 {
+    font-size: 35px;
+  }
+  .btn-up .up {
+    width: 64px;
+    height: 64px;
+    right: 10px;
+    bottom: 10px;
+  }
+  .block-menu {
+    display: none;
+  }
+  .card-1 {
+    border: none;
+    border-bottom: 1px solid #75757533;
+  }
+  .width-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .block1,
+  .block2,
+  .block3,
+  .text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .block1,
+  .block2,
+  .block3,
+  .text {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .app {
+    width: 110px;
+    height: 37px;
+    margin-right: 10px;
+  }
+  .google {
+    width: 125px;
+    height: 37px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .app {
+    width: 125px;
+    height: 42px;
+    margin-right: 15px;
+  }
+  .google {
+    width: 138px;
+    height: 41px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .width-menu {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .width-menu {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .card-1 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .container {
+    max-width: 756px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .cards img {
+    width: 102px;
+  }
+  h3,
+  .two-name,
+  .price {
+    line-height: 15px;
+  }
+  h3 {
+    font-size: 13px;
+    padding-left: 8px;
+    padding-top: 8px;
+  }
+  .two-name {
+    font-size: 11px;
+    padding-left: 8px;
+  }
+  .price {
+    font-size: 14px;
+    font-weight: 800;
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 576px) {
+  .dropdown-menu1 {
+    display: none;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 576px) {
+  .dropdown-menu1 > li {
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 430px) {
+  .card-name {
+    padding: 38px 18px 38px 18px;
+    width: 340px;
+  }
+}

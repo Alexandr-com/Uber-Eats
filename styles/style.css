@@ -1,0 +1,446 @@
+/* Шрифты */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #222222;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+main {
+  padding-top: 150px;
+  padding-bottom: 30px;
+}
+.container {
+  max-width: 956px;
+  margin: auto;
+  padding: 0 10px;
+}
+.logo:hover {
+  text-decoration: none;
+}
+
+/* Шапка */
+
+.header {
+  position: fixed;
+  padding: 16px 0 16px 0;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0 0 16px #26262629;
+  z-index: 1000;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.but-in,
+.basket {
+  display: inline-block;
+}
+.but-in {
+  width: 78px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.but-in:focus {
+  font-size: 14px;
+  font-weight: 700;
+  background: #f0f0f0;
+  outline: none;
+  border: 2px solid #222222;
+}
+.basket img {
+  width: 19px;
+  height: 19px;
+}
+.logo .first-name {
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  color: #222222;
+}
+.logo .blink-name {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  animation: blink 3s linear infinite;
+  font-weight: 900;
+}
+@keyframes blink {
+  0% {
+    color: #57ad56;
+  }
+  50% {
+    color: #222222;
+  }
+  100% {
+    color: #57ad56;
+  }
+}
+
+/* Контент "Main (основной контент)" */
+
+h1 {
+  font-size: 22px;
+  line-height: 34px;
+  padding: 50px 0 20px 0;
+}
+input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #adadad;
+}
+input {
+  border: none;
+  width: 100%;
+  outline: none;
+}
+.band1 {
+  border: none;
+  background-color: #adadad;
+  height: 1px;
+}
+
+/* Стили для блока с карточками */
+
+.img-cards a {
+  display: block;
+}
+.img-cards {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card1 {
+  margin: 10px 0;
+  transition: 0.7s linear;
+}
+.card1:hover {
+  background-color: #c5c2c291;
+}
+.card1 {
+  width: 308px;
+  overflow: hidden;
+}
+.card1 img {
+  transition: all 1s ease-out;
+}
+.card1:hover img {
+  transform: scale(1.1);
+}
+.card1 img {
+  width: 100%;
+}
+.description {
+  margin-top: 25px;
+  margin-left: 5px;
+}
+.name-card {
+  color: #1d1d1d;
+  font-size: 16px;
+  line-height: 24px;
+}
+.kitchen {
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+}
+.time {
+  color: #1d1d1d;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+/* Блок "footer" */
+
+footer {
+  background: #262626;
+  width: 100%;
+  padding: 40px 0 20px 0;
+}
+footer .first-name1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+}
+footer .blink-name2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  animation: blink-name2 3s ease-in-out infinite;
+  font-weight: 400;
+  font-size: 40px;
+}
+@keyframes blink-name2 {
+  0% {
+    color: #57ad56;
+  }
+  50% {
+    color: #262626;
+  }
+  100% {
+    color: #57ad56;
+  }
+}
+.band2 {
+  border: none;
+  background-color: #ffffff;
+  height: 1px;
+  margin: 40px 0 40px 0;
+}
+
+/* Стили для "footer-menu" */
+.block1,
+.block2,
+.block3 {
+  width: 308px;
+}
+.block1 {
+  margin-bottom: 40px;
+}
+.footer-menu,
+.footer-text {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.block2 a,
+.block3 a {
+  padding: 12px 0;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  display: block;
+}
+.block2 a {
+  width: 196px;
+}
+.block3 a {
+  width: 67px;
+}
+
+/* Блок кнопки выбора языка */
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 227px;
+  font-size: 13px;
+  color: #ffffff;
+  background: #3b3b3b;
+  border: none;
+  border-radius: 0;
+}
+.dropdown-menu {
+  margin-top: 4px;
+  width: 227px;
+  font-size: 13px;
+  color: #ffffff;
+  background: #dddddd;
+  border-radius: 0;
+  text-align: center;
+}
+
+/* Подблок "social" */
+
+.wlg {
+  justify-content: flex-start;
+}
+.world {
+  width: 16px;
+  margin-right: 16px;
+}
+.shape {
+  width: 14px;
+}
+.sharp,
+.uber {
+  font-size: 16px;
+  line-height: 19px;
+  display: inline-block;
+}
+.social {
+  margin-top: 33px;
+  width: 120px;
+}
+.sharp {
+  color: #49a144;
+}
+.uber {
+  color: #ffffff;
+}
+
+/* Кнопки App Store + Googl play */
+
+.app_googl {
+  display: flex;
+  justify-content: center;
+}
+.app {
+  width: 182px;
+  height: 61px;
+  background: url("../images/App_Store.png") no-repeat;
+  background-size: cover;
+  margin-right: 40px;
+}
+.google {
+  width: 203px;
+  height: 60px;
+  background: url("../images/Goole_play.png") no-repeat;
+  background-size: cover;
+}
+.app,
+.google {
+  opacity: 0.4;
+}
+.app:hover,
+.google:hover {
+  opacity: 1;
+}
+
+/* Блок footer-text */
+
+.text {
+  font-size: 11px;
+  line-height: 13px;
+  width: 308px;
+  color: #ffffff;
+}
+
+/* Кнопка "Вверх" */
+
+.btn-up {
+  opacity: 0.3;
+  cursor: pointer;
+}
+.btn-up .up {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 80px;
+  height: 80px;
+  background: url("../images/btn-up.png") no-repeat;
+  background-size: cover;
+}
+.btn-up:hover {
+  opacity: 1;
+}
+
+/* Медиа-запросы */
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-top: 120px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .basket {
+    display: none;
+  }
+  .nav-menu {
+    width: 78px;
+  }
+  .btn,
+  .dropdown-menu {
+    width: 173px;
+  }
+  footer .first-name1,
+  footer .blink-name2 {
+    font-size: 35px;
+  }
+  h1 {
+    padding: 50px 0 0 0;
+  }
+  .btn-up .up {
+    width: 64px;
+    height: 64px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card1 {
+    width: 32.2%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .card1 {
+    width: 32.2%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .card1 {
+    width: 48.3%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block1,
+  .block2,
+  .block3,
+  .text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .block1,
+  .block2,
+  .block3,
+  .text {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .app {
+    width: 110px;
+    height: 37px;
+    margin-right: 10px;
+  }
+  .google {
+    width: 125px;
+    height: 37px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .app {
+    width: 125px;
+    height: 42px;
+    margin-right: 15px;
+  }
+  .google {
+    width: 138px;
+    height: 41px;
+  }
+}
